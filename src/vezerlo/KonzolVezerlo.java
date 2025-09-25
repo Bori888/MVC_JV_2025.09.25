@@ -1,13 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package vezerlo;
 
-/**
- *
- * @author ilyes.borbala
- */
+import modell.Modell;
+import nezet.KonzolNezet;
+
 public class KonzolVezerlo {
-    
+
+    private Modell modell;
+    private KonzolNezet nezet;
+
+    /*Dependency Injections*/
+ /* Fügöség befecskedezése
+            Id inncs Di vezérlo pédányositja a pédányt*/
+    public KonzolVezerlo(Modell modell, KonzolNezet nezet) {
+        this.nezet = nezet;
+        this.modell = new Modell("Hello MVC!");
+
+        nezet.mutat(modell.getAdat());
+
+    }
+
 }

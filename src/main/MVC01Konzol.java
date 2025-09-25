@@ -1,20 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package main;
 
-/**
- *
- * @author ilyes.borbala
- */
+import modell.Modell;
+import vezerlo.KonzolVezerlo;
+import nezet.KonzolNezet;
+
 public class MVC01Konzol {
 
-    /**
-     * @param args the command line arguments
-     */
+  
     public static void main(String[] args) {
-        // TODO code application logic here
+        KonzolNezet  nezet = new KonzolNezet();
+        Modell modell =new Modell("Hello Mvc DI vel");
+        KonzolVezerlo vezerlo =new KonzolVezerlo( modell,nezet);
+        
     }
     
 }

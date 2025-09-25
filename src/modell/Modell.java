@@ -1,13 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modell;
 
-/**
- *
- * @author ilyes.borbala
- */
 public class Modell {
+    private String adat;
+
+   
+
+    public Modell(String adat) {
+        this.adat = adat;
+    }
+     public String getAdat() {
+        return adat;
+    }
+
+    public void setAdat(String adat) {
+        if (adat == null) {
+            throw new IllegalArgumentException("hibas adat!");
+            
+        }
+        this.adat = adat;
+    }
     
 }
