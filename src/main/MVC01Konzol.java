@@ -10,7 +10,8 @@ public class MVC01Konzol {
   
     public static void main(String[] args) {
         KonzolNezet  nezet = new KonzolNezet();
-        Modell modell =new Modell("Hello Mvc DI vel");
+        String adat = nezet.bekerAdat("Mi lesz az adat értéke? ");
+        Modell modell =new Modell(adat);
         KonzolVezerlo vezerlo =new KonzolVezerlo( modell,nezet);
         
     }

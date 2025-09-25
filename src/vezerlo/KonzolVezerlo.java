@@ -13,9 +13,10 @@ public class KonzolVezerlo {
             Id inncs Di vezérlo pédányositja a pédányt*/
     public KonzolVezerlo(Modell modell, KonzolNezet nezet) {
         this.nezet = nezet;
-        this.modell = new Modell("Hello MVC!");
+        //this.modell = new Modell("Hello MVC!");
+        this.modell=modell;
 
-        nezet.mutat(modell.getAdat());
+        nezet.mutatAdat(modell.getAdat());
 
     }
 
